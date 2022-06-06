@@ -15,6 +15,16 @@ Grafanaによって多様なデータソースが表示されることを試す�
 
 ## アクセス方法
 
+### Docker操作
+```bash
+// DockerCompose起動
+docker-compose up
+
+// DockerCompose終了
+docker-compose down
+```
+
+### 接続情報
 - URL
   - http://localhost:3000
 - ID/PW
@@ -43,12 +53,6 @@ https://covid19.mhlw.go.jp/extensions/public/index.html
 ### 使用方法
 
 ```
-// DockerCompose起動
-docker-compose up
-
-// DockerCompose終了
-docker-compose down
-
 // データ初期化
 docker-compose exec mysql bash /tmp/sql/create.sh
 ```
